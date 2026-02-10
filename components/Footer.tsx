@@ -10,10 +10,10 @@ export const Footer: React.FC = () => {
         </p>
         <div className="flex gap-8">
           <a 
-            href="mailto:milena@evolucioneleyendo.mx" 
+            href="mailto:milena.sandoval@evolucioneleyendo.com" 
             className="text-xs text-cream-muted hover:text-gold transition-colors"
           >
-            milena@evolucioneleyendo.mx
+            milena.sandoval@evolucioneleyendo.com
           </a>
           <a 
             href="https://www.evolucioneleyendo.mx/" 
