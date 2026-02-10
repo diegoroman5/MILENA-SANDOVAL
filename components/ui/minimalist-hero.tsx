@@ -7,6 +7,7 @@ import { cn } from '../../lib/utils';
 interface MinimalistHeroProps {
   logoText: string;
   navLinks: { label: string; href: string }[];
+  tagline?: string;
   mainText: string;
   readMoreLink: string;
   imageSrc: string;
@@ -20,7 +21,6 @@ interface MinimalistHeroProps {
   className?: string;
 }
 
-// Fixed type assignment error for 'key' prop by using React.FC
 const NavLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => (
   <a
     href={href}
@@ -30,7 +30,6 @@ const NavLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, 
   </a>
 );
 
-// Fixed type assignment error for 'key' prop by using React.FC
 const SocialIcon: React.FC<{ href: string; icon: LucideIcon }> = ({ href, icon: Icon }) => (
   <a href={href} target="_blank" rel="noopener noreferrer" className="text-cream/40 transition-colors hover:text-gold">
     <Icon className="h-5 w-5" />
@@ -40,6 +39,7 @@ const SocialIcon: React.FC<{ href: string; icon: LucideIcon }> = ({ href, icon: 
 export const MinimalistHero = ({
   logoText,
   navLinks,
+  tagline,
   mainText,
   readMoreLink,
   imageSrc,
@@ -98,10 +98,12 @@ export const MinimalistHero = ({
           transition={{ duration: 0.6, delay: 0.6 }}
           className="z-20 order-2 md:order-1 text-center md:text-left"
         >
-          <div className="mb-4 inline-flex items-center gap-3">
-             <span className="w-8 h-px bg-gold/50" />
-             <span className="text-[10px] font-bold tracking-[0.3em] text-gold uppercase">Neuro Performance</span>
-          </div>
+          {tagline && (
+            <div className="mb-4 inline-flex items-center gap-3">
+               <span className="w-8 h-px bg-gold/50" />
+               <span className="text-[10px] font-bold tracking-[0.3em] text-gold uppercase">{tagline}</span>
+            </div>
+          )}
           <p className="mx-auto max-w-xs text-lg leading-relaxed text-cream/70 md:mx-0 font-light">{mainText}</p>
           <a href={readMoreLink} className="mt-8 inline-block text-[10px] font-bold tracking-[0.2em] uppercase text-gold hover:text-cream transition-colors border-b border-gold/30 pb-1">
             Mi Historia
@@ -125,7 +127,7 @@ export const MinimalistHero = ({
             <motion.img
                 src={imageSrc}
                 alt={imageAlt}
-                className="relative z-10 h-auto w-64 object-cover md:w-80 lg:w-96 drop-shadow-[0_0_50px_rgba(200,160,74,0.2)]"
+                className="relative z-10 h-auto w-64 object-contain md:w-80 lg:w-96 drop-shadow-[0_0_50px_rgba(200,160,74,0.2)]"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
