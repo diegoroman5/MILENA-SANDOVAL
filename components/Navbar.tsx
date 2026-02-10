@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 interface NavbarProps {
@@ -17,14 +16,8 @@ export const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
   ];
 
   return (
-    <nav className={`fixed left-1/2 -translate-x-1/2 z-50 transition-all duration-700 w-full max-w-7xl px-6 ${
-      isScrolled ? 'top-6' : 'top-0'
-    }`}>
-      <div className={`flex justify-between items-center transition-all duration-500 px-8 ${
-        isScrolled 
-          ? 'bg-dark-surface/80 backdrop-blur-2xl border border-gold/20 rounded-full py-3 shadow-[0_20px_50px_rgba(0,0,0,0.5)]' 
-          : 'bg-transparent py-8 border-b border-transparent'
-      }`}>
+    <nav className="fixed left-1/2 -translate-x-1/2 z-50 transition-all duration-700 w-full max-w-7xl px-6 top-6">
+      <div className="flex justify-between items-center transition-all duration-500 px-8 bg-dark-surface/80 backdrop-blur-2xl border border-gold/20 rounded-full py-3 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
         <a href="#" className="font-serif text-2xl font-bold text-gold tracking-tighter group">
           MS<span className="opacity-0 group-hover:opacity-100 transition-opacity text-cream">.</span>
         </a>
@@ -45,7 +38,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
         </ul>
 
         <div className="flex items-center gap-4">
-          <a href="#contacto" className={`hidden lg:block text-[9px] font-bold uppercase tracking-widest px-6 py-2.5 rounded-full border border-gold/30 hover:bg-gold hover:text-dark transition-all ${isScrolled ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+          <a href="#contacto" className="hidden lg:block text-[9px] font-bold uppercase tracking-widest px-6 py-2.5 rounded-full border border-gold/30 hover:bg-gold hover:text-dark transition-all">
             Agendar Sesión
           </a>
           
