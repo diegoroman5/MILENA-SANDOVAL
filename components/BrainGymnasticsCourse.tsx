@@ -19,15 +19,6 @@ export const BrainGymnasticsCourse: React.FC = () => {
                 allowFullScreen
               ></iframe>
             </div>
-
-            {/* Milena image as authority detail */}
-            <div className="absolute -bottom-10 -right-10 w-48 md:w-64 z-20 pointer-events-none">
-              <img 
-                src="/images/milena-cerebro.png" 
-                alt="Milena Sandoval EMA Expert" 
-                className="w-full h-auto drop-shadow-2xl"
-              />
-            </div>
             
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-gold/10 blur-[80px] rounded-full" />
           </div>
