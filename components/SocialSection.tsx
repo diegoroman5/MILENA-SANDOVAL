@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Instagram, Youtube, Linkedin, Music2, Facebook, ExternalLink } from 'lucide-react';
 
@@ -24,6 +23,16 @@ const socials = [
     link: "https://www.instagram.com/milena2.sandovall" 
   },
   { 
+    name: "Facebook", 
+    handle: "Milena Sandoval", 
+    count: "100K+", 
+    label: "fans",
+    Icon: Facebook,
+    color: "group-hover:text-blue-500",
+    bgHover: "group-hover:bg-gradient-to-br group-hover:from-blue-600/10 group-hover:to-indigo-500/10",
+    link: "https://www.facebook.com/Milena2.Sandovall" 
+  },
+  { 
     name: "YouTube", 
     handle: "@MilecturaSandovall", 
     count: "500+", 
@@ -42,16 +51,6 @@ const socials = [
     color: "group-hover:text-blue-400",
     bgHover: "group-hover:bg-gradient-to-br group-hover:from-blue-500/10 group-hover:to-blue-900/10",
     link: "https://www.linkedin.com/in/milena-sandoval-arias-41b0161b3/" 
-  },
-  { 
-    name: "Facebook", 
-    handle: "Milena Sandoval", 
-    count: "100K+", 
-    label: "fans",
-    Icon: Facebook,
-    color: "group-hover:text-blue-500",
-    bgHover: "group-hover:bg-gradient-to-br group-hover:from-blue-600/10 group-hover:to-indigo-500/10",
-    link: "https://www.facebook.com/Milena2.Sandovall" 
   }
 ];
 
@@ -110,15 +109,6 @@ export const SocialSection: React.FC = () => {
               </div>
             </a>
           ))}
-        </div>
-
-        {/* Logo Milectura */}
-        <div className="mt-16 flex justify-center">
-          <img 
-            src="/images/logo-milectura.png" 
-            alt="Milectura" 
-            className="h-12 md:h-16 opacity-40 hover:opacity-80 transition-opacity duration-500 invert"
-          />
         </div>
       </div>
     </section>
