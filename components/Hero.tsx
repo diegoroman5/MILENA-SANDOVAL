@@ -23,9 +23,10 @@ export const Hero: React.FC = () => {
       <MinimalistHero
         logoText="MS."
         navLinks={navLinks}
-        mainText='"Trabaja más en ti que en tu proyecto". Desbloquea tu potencial cognitivo hoy mismo con neurociencia aplicada.'
+        tagline="Neuro-Experta en Alta Performance"
+        mainText="CEO de Evolucione, experta en gimnasia cerebral y metaaprendizaje. Transformando la forma en que el mundo lee, aprende y piensa — una mente a la vez."
         readMoreLink="#sobre-mi"
-        imageSrc="https://raw.githubusercontent.com/stackblitz/stackblitz-images/main/milena-cerebro.png"
+        imageSrc="/images/milena-hero.png"
         imageAlt="Milena Sandoval Neuro-Performance Expert"
         overlayText={{
           part1: 'Milena',

@@ -2,10 +2,10 @@
 import React from 'react';
 
 const features = [
-  { icon: "⚡", title: "Lectura 3x más rápida", desc: "Técnicas comprobadas para triplicar tu velocidad." },
-  { icon: "🎯", title: "100% Comprensión", desc: "No solo lees más rápido, comprendes y retienes." },
-  { icon: "🧠", title: "Gimnasia Cerebral", desc: "Ejercicios que fortalecen tu capacidad cognitiva." },
-  { icon: "👥", title: "Todas las edades", desc: "Programas para niños, jóvenes y adultos." }
+  { icon: "🧠", title: "Hábitos / Cerebro", desc: "Reprograma tus hábitos con neurociencia aplicada." },
+  { icon: "📖", title: "Procesamiento de la lectura", desc: "Técnicas para leer más rápido con mayor comprensión." },
+  { icon: "📚", title: "Estrategias de estudio", desc: "Métodos probados para retener y aplicar lo aprendido." },
+  { icon: "⏳", title: "+10 años", desc: "Más de una década transformando la forma de aprender." }
 ];
 
 export const Evolucione: React.FC = () => {
@@ -23,11 +23,11 @@ export const Evolucione: React.FC = () => {
             </div>
 
             <h2 className="font-serif text-5xl md:text-6xl font-semibold leading-tight">
-              Evolucione <em className="text-gold italic not-italic">Leyendo</em>
+              Evolucione
             </h2>
 
             <p className="text-lg text-cream-muted leading-relaxed max-w-xl">
-              El curso de metaprendizaje más completo de Latinoamérica. Con más de 10,000 graduados, Evolucione transforma tu forma de leer, comprender y memorizar información.
+              El curso de metaaprendizaje más completo de Latinoamérica. Con más de 15,000 graduados, Evolucione transforma tu forma de leer, comprender y memorizar información.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -62,14 +62,13 @@ export const Evolucione: React.FC = () => {
               <iframe 
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/QD-TFQkrulk" 
-                title="Evolucione Leyendo - Presentación"
+                title="Evolucione - Presentación"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
               ></iframe>
               <div className="absolute inset-0 pointer-events-none border-2 border-gold/0 group-hover:border-gold/20 transition-all rounded-3xl" />
             </div>
             
-            {/* Decorative element */}
             <div className="absolute -bottom-6 -right-6 w-24 h-24 border-b-2 border-r-2 border-gold/20 rounded-br-3xl pointer-events-none" />
             <div className="absolute -top-6 -left-6 w-24 h-24 border-t-2 border-l-2 border-gold/20 rounded-tl-3xl pointer-events-none" />
           </div>

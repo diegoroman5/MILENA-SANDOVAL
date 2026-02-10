@@ -10,23 +10,22 @@ export const BrainGymnasticsCourse: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           
           <div className="order-2 lg:order-1 relative group">
-            {/* Video que estaba (Telemundo / Hoy Día) */}
             <div className="relative aspect-video rounded-[40px] overflow-hidden border border-gold/20 shadow-2xl bg-dark-surface z-10">
               <iframe 
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/7h4shX3rw8g" 
-                title="EMA - Gimnasia Cerebral en Telemundo"
+                src="https://www.youtube.com/embed/0edke-GiNw8" 
+                title="EMA - Exponencialmente Ágil"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
               ></iframe>
             </div>
 
-            {/* Imagen 2 de Milena (Top Rojo) como detalle de autoridad */}
+            {/* Milena image as authority detail */}
             <div className="absolute -bottom-10 -right-10 w-48 md:w-64 z-20 pointer-events-none">
               <img 
-                src="https://raw.githubusercontent.com/stackblitz/stackblitz-images/main/milena-rojo.png" 
+                src="/images/milena-cerebro.png" 
                 alt="Milena Sandoval EMA Expert" 
-                className="w-full h-auto drop-shadow-2xl filter brightness-110"
+                className="w-full h-auto drop-shadow-2xl"
               />
             </div>
             

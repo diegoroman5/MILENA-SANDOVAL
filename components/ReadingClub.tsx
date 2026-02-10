@@ -57,11 +57,11 @@ export const ReadingClub: React.FC = () => {
               <div className="absolute top-0 right-0 p-8 text-gold/10 font-serif text-8xl pointer-events-none">"</div>
               
               <div className="flex flex-col md:flex-row gap-8 items-center md:items-start mb-10">
-                <div className="w-32 h-48 bg-gradient-to-br from-gold/20 to-dark-surface rounded-lg shadow-2xl border border-gold/30 flex-shrink-0 transform -rotate-6 hover:rotate-0 transition-transform duration-500 overflow-hidden flex items-center justify-center text-center p-4">
-                  <div className="text-[10px] font-bold text-gold uppercase tracking-tighter">Lectura del Mes</div>
+                <div className="w-32 h-48 rounded-lg shadow-2xl border border-gold/30 flex-shrink-0 transform -rotate-6 hover:rotate-0 transition-transform duration-500 overflow-hidden">
+                  <img src="/images/libro-del-mes.png" alt="Lectura del Mes - Realidad 0.0" className="w-full h-full object-cover" />
                 </div>
                 <div className="text-center md:text-left">
-                  <h4 className="font-serif text-2xl text-cream mb-2 italic">Desbloquea tu potencial</h4>
+                  <h4 className="font-serif text-2xl text-cream mb-2 italic">Realidad 0.0</h4>
                   <p className="text-xs text-gold font-bold tracking-widest uppercase mb-4">Recomendación Actual</p>
                   <p className="text-cream-muted text-sm leading-relaxed">
                     "La lectura es para la mente lo que el ejercicio es para el cuerpo." En nuestro club, convertimos cada página en un entrenamiento de alto rendimiento.

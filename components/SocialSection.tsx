@@ -1,110 +1,124 @@
 
 import React from 'react';
+import { Instagram, Youtube, Linkedin, Music2, Facebook, ExternalLink } from 'lucide-react';
 
 const socials = [
   { 
     name: "TikTok", 
     handle: "@milenasandovall", 
     count: "1.9M", 
-    label: "Followers",
-    icon: "🎵",
-    gridClass: "md:col-span-2 md:row-span-2",
-    theme: "from-white/5 to-transparent",
+    label: "seguidores",
+    Icon: Music2,
+    color: "group-hover:text-white",
+    bgHover: "group-hover:bg-gradient-to-br group-hover:from-pink-500/20 group-hover:to-purple-500/20",
     link: "https://www.tiktok.com/@milenasandovall" 
   },
   { 
     name: "Instagram", 
     handle: "@milena2.sandovall", 
     count: "245K", 
-    label: "Community",
-    icon: "📸",
-    gridClass: "md:col-span-1",
-    theme: "from-gold/10 to-transparent",
+    label: "comunidad",
+    Icon: Instagram,
+    color: "group-hover:text-pink-400",
+    bgHover: "group-hover:bg-gradient-to-br group-hover:from-pink-500/10 group-hover:to-orange-500/10",
     link: "https://www.instagram.com/milena2.sandovall" 
   },
   { 
     name: "YouTube", 
-    handle: "Neuro-Tips", 
+    handle: "@MilecturaSandovall", 
     count: "500+", 
-    label: "Videos",
-    icon: "📺",
-    gridClass: "md:col-span-1",
-    theme: "from-red-500/5 to-transparent",
+    label: "videos",
+    Icon: Youtube,
+    color: "group-hover:text-red-500",
+    bgHover: "group-hover:bg-gradient-to-br group-hover:from-red-500/10 group-hover:to-red-900/10",
     link: "https://www.youtube.com/@MilecturaSandovall" 
   },
   { 
     name: "LinkedIn", 
-    handle: "Professional", 
-    count: "Expert", 
-    label: "Credential",
-    icon: "💼",
-    gridClass: "md:col-span-1",
-    theme: "from-blue-500/5 to-transparent",
+    handle: "Milena Sandoval", 
+    count: "Pro",
+    label: "networking",
+    Icon: Linkedin,
+    color: "group-hover:text-blue-400",
+    bgHover: "group-hover:bg-gradient-to-br group-hover:from-blue-500/10 group-hover:to-blue-900/10",
     link: "https://www.linkedin.com/in/milena-sandoval-arias-41b0161b3/" 
   },
   { 
     name: "Facebook", 
-    handle: "Comunidad", 
-    count: "+100K", 
-    label: "Fans",
-    icon: "👥",
-    gridClass: "md:col-span-1",
-    theme: "from-indigo-500/5 to-transparent",
+    handle: "Milena Sandoval", 
+    count: "100K+", 
+    label: "fans",
+    Icon: Facebook,
+    color: "group-hover:text-blue-500",
+    bgHover: "group-hover:bg-gradient-to-br group-hover:from-blue-600/10 group-hover:to-indigo-500/10",
     link: "https://www.facebook.com/Milena2.Sandovall" 
   }
 ];
 
 export const SocialSection: React.FC = () => {
   return (
-    <section id="redes" className="py-32 bg-dark relative overflow-hidden">
-      <div className="container mx-auto px-6">
-        <div className="max-w-4xl mb-24">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="h-px w-12 bg-gold" />
-            <span className="text-gold font-bold tracking-[0.4em] text-[10px] uppercase">Ecosistema Digital</span>
+    <section id="redes" className="py-24 md:py-32 bg-dark relative overflow-hidden">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold/5 blur-[150px] rounded-full pointer-events-none" />
+      
+      <div className="container mx-auto px-6 relative z-10">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="flex justify-center items-center gap-3 text-gold font-bold tracking-[0.2em] text-[10px] uppercase mb-6">
+            <span className="w-8 h-px bg-gold" />
+            Ecosistema Digital
+            <span className="w-8 h-px bg-gold" />
           </div>
-          <h2 className="font-serif text-5xl md:text-7xl font-semibold leading-tight mb-8">
-            Impacto que <em className="text-gold italic not-italic">trasciende</em> pantallas
+          <h2 className="font-serif text-4xl md:text-6xl font-semibold leading-tight mb-4">
+            Conecta con <em className="text-gold italic not-italic">Milena</em>
           </h2>
-          <p className="text-cream-muted text-xl font-light max-w-2xl">
-            Únete a la comunidad de neuro-entrenamiento más influyente de Latinoamérica.
+          <p className="text-cream-muted text-lg font-light max-w-xl mx-auto">
+            Únete a la comunidad de neuro-entrenamiento más influyente de Latinoamérica
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Social Grid - Clean horizontal layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
           {socials.map((s, idx) => (
             <a 
               key={idx} 
               href={s.link} 
               target="_blank"
-              className={`group relative overflow-hidden rounded-[40px] border border-gold/10 bg-dark-card p-10 transition-all duration-700 hover:border-gold/40 hover:-translate-y-2 ${s.gridClass}`}
+              rel="noopener noreferrer"
+              className={`group relative rounded-3xl border border-gold/10 bg-dark-card/80 p-6 transition-all duration-500 hover:border-gold/30 hover:-translate-y-1 hover:shadow-lg hover:shadow-gold/5 ${s.bgHover}`}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${s.theme} opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
-              
-              <div className="relative z-10 h-full flex flex-col justify-between">
-                <div className="flex justify-between items-start">
-                  <span className="text-3xl grayscale group-hover:grayscale-0 transition-all">{s.icon}</span>
-                  <div className="text-right">
-                    <div className="text-[10px] font-bold text-gold tracking-widest uppercase mb-1">{s.name}</div>
-                    <div className="text-[9px] text-cream-muted uppercase tracking-tighter">{s.handle}</div>
-                  </div>
+              <div className="flex flex-col items-center text-center gap-4">
+                {/* Icon */}
+                <div className={`w-12 h-12 rounded-2xl bg-dark-surface border border-gold/10 flex items-center justify-center transition-all duration-500 group-hover:border-gold/30 group-hover:scale-110`}>
+                  <s.Icon className={`w-5 h-5 text-cream/50 transition-colors duration-500 ${s.color}`} />
+                </div>
+                
+                {/* Count */}
+                <div className="font-serif text-3xl font-bold text-cream group-hover:text-gold transition-colors duration-500">
+                  {s.count}
+                </div>
+                
+                {/* Name and handle */}
+                <div>
+                  <div className="text-xs font-bold text-cream mb-0.5">{s.name}</div>
+                  <div className="text-[10px] text-cream-muted">{s.handle}</div>
                 </div>
 
-                <div className="mt-12">
-                  <div className="font-serif text-6xl md:text-7xl font-bold text-cream group-hover:text-gold transition-colors duration-500 mb-2">
-                    {s.count}
-                  </div>
-                  <div className="text-[10px] font-bold text-cream-muted uppercase tracking-[0.3em] opacity-40">
-                    {s.label}
-                  </div>
-                </div>
-
-                <div className="absolute top-10 right-10 translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500">
-                  <svg className="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                {/* Hover arrow */}
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <ExternalLink className="w-3.5 h-3.5 text-gold" />
                 </div>
               </div>
             </a>
           ))}
+        </div>
+
+        {/* Logo Milectura */}
+        <div className="mt-16 flex justify-center">
+          <img 
+            src="/images/logo-milectura.png" 
+            alt="Milectura" 
+            className="h-12 md:h-16 opacity-40 hover:opacity-80 transition-opacity duration-500 invert"
+          />
         </div>
       </div>
     </section>
