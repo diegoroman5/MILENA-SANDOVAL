@@ -12,6 +12,7 @@ import { SocialSection } from './components/SocialSection';
 import { ContactCTA } from './components/ContactCTA';
 import { Footer } from './components/Footer';
 import { NeuroAssistant } from './components/NeuroAssistant';
+import { EventosEspeciales } from './components/ui/interactive-image-accordion';
 
 const App: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,6 +39,7 @@ const App: React.FC = () => {
         <Evolucione />
         <BrainGymnasticsCourse />
         <LatestMedia />
+        <EventosEspeciales />
         <ReadingClub />
         <SocialSection />
         <ContactCTA />
