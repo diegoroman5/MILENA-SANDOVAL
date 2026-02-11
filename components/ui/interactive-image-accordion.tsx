@@ -5,7 +5,7 @@ const accordionItems = [
   {
     id: 1,
     title: 'FIL Guadalajara',
-    imageUrl: 'https://unsplash.com/es/fotos/j2UmXlPepR0',
+    imageUrl: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2028&auto=format&fit=crop',
   },
   {
     id: 2,
