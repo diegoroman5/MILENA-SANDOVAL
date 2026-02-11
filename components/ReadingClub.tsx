@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const guests = [
@@ -91,12 +90,16 @@ export const ReadingClub: React.FC = () => {
               No es solo leer más rápido, es leer con propósito. Únete a una comunidad de líderes que buscan transformar su conocimiento en sabiduría aplicada.
             </p>
 
-            <button className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-br from-gold to-gold-dark text-dark font-bold text-xs md:text-sm tracking-widest uppercase py-4 px-8 md:py-5 md:px-12 rounded-full hover:scale-105 transition-all shadow-xl">
+            <a 
+              href="https://whatsapp.com/channel/0029VadYSoJ30LKGw5aeky3J"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-br from-gold to-gold-dark text-dark font-bold text-xs md:text-sm tracking-widest uppercase py-4 px-8 md:py-5 md:px-12 rounded-full hover:scale-105 transition-all shadow-xl">
               Unirme a la Comunidad
               <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
 
