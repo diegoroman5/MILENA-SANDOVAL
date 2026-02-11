@@ -1,23 +1,23 @@
 import React from 'react';
 
 const guests = [
-  { id: "0mCnn2mSdlg", title: "Invitado Especial 1" },
-  { id: "lZJBTgwziLY", title: "Invitado Especial 2" },
-  { id: "cd_XTwdyfq8", title: "Invitado Especial 3" },
-  { id: "lptCl31mRWc", title: "Invitado Especial 4" },
-  { id: "Fqp1Uzv38Ec", title: "Invitado Especial 5" }
+  { id: "0mCnn2mSdlg", title: "Club de Lectura con Mónica Gudiño" },
+  { id: "lZJBTgwziLY", title: "Club de Lectura con Maite Doria" },
+  { id: "cd_XTwdyfq8", title: "Club de Lectura con Memo Serrano" },
+  { id: "lptCl31mRWc", title: "Club de Lectura con César Suárez Uribe" },
+  { id: "Fqp1Uzv38Ec", title: "Club de Lectura con Rocío Rodríguez" }
 ];
 
 const authors = [
-  { id: "DWnBbw_7jRg", title: "Entrevista Autor 1" },
-  { id: "7bAJf6YYoVY", title: "Entrevista Autor 2" },
-  { id: "TVaTPqyI1SE", title: "Entrevista Autor 3" },
-  { id: "pJUmLyZTHHU", title: "Entrevista Autor 4" },
-  { id: "LlI8feMpARQ", title: "Entrevista Autor 5" },
-  { id: "RNrH_OnJHlc", title: "Entrevista Autor 6" },
-  { id: "1hm-vn0np8s", title: "Entrevista Autor 7" },
-  { id: "OmwaISJscQU", title: "Entrevista Autor 8" },
-  { id: "ZDmcndQGG_k", title: "Entrevista Autor 9" }
+  { id: "DWnBbw_7jRg", title: "Entrevista con Gaby Pérez Islas" },
+  { id: "7bAJf6YYoVY", title: "EntrevistaAlex Toledo" },
+  { id: "TVaTPqyI1SE", title: "Entrevista con María Dueñas" },
+  { id: "pJUmLyZTHHU", title: "Entrevista con César Suárez" },
+  { id: "LlI8feMpARQ", title: "Entrevista con Enrique Rojas" },
+  { id: "RNrH_OnJHlc", title: "Entrevista con Carlos Jaramillo" },
+  { id: "1hm-vn0np8s", title: "Entrevista con Vilma Núñez" },
+  { id: "OmwaISJscQU", title: "Entrevista con Ismael Cala" },
+  { id: "ZDmcndQGG_k", title: "Entrevista con Dr. Mario Alonso Puig" }
 ];
 
 const VideoCard: React.FC<{ id: string; title: string }> = ({ id, title }) => (
