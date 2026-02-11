@@ -10,22 +10,22 @@ const accordionItems = [
   {
     id: 2,
     title: 'Visitas a Empresas',
-    imageUrl: 'https://unsplash.com/es/fotos/publico-diverso-escuchando-atentamente-en-un-evento-de-conferencia-CvG2lnWbm8s',
+    imageUrl: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop',
   },
   {
     id: 3,
     title: 'Talleres en Colegios',
-    imageUrl: 'https://unsplash.com/es/fotos/gtyskAO998w',
+    imageUrl: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop',
   },
   {
     id: 4,
     title: 'Conferencias',
-    imageUrl: 'https://unsplash.com/es/fotos/lQBkv28OZMQ',
+    imageUrl: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=2070&auto=format&fit=crop',
   },
   {
     id: 5,
     title: 'Club de Lectura',
-    imageUrl: 'https://unsplash.com/es/fotos/iF0mSCbtBSY',
+    imageUrl: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=2070&auto=format&fit=crop',
   },
 ];
 
