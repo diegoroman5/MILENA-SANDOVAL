@@ -26,7 +26,8 @@ export const Hero: React.FC = () => {
         tagline="Neuro-Experta en Alta Performance"
         mainText="CEO de Evolucione, experta en gimnasia cerebral y metaaprendizaje. Transformando la forma en que el mundo lee, aprende y piensa — una mente a la vez."
         readMoreLink="#sobre-mi"
-      imageSrc="/images/milena-cerebro.png"        imageAlt="Milena Sandoval Neuro-Performance Expert"
+        imageSrc="/images/milena-hero.png"
+        imageAlt="Milena Sandoval Neuro-Performance Expert"
         overlayText={{
           part1: 'Milena',
           part2: 'Sandoval',
