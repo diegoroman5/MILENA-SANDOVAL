@@ -5,27 +5,27 @@ const accordionItems = [
   {
     id: 1,
     title: 'FIL Guadalajara',
-    imageUrl: 'https://www.facebook.com/photo.php?fbid=871738332494849&set=pb.100089760717051.-2207520000&type=3',
+    imageUrl: 'https://unsplash.com/es/fotos/j2UmXlPepR0',
   },
   {
     id: 2,
     title: 'Visitas a Empresas',
-    imageUrl: 'https://drive.google.com/drive/folders/1lzoUKZWYLAkL0iVDB1TplY03_ek3cpEu?usp=sharing',
+    imageUrl: 'https://unsplash.com/es/fotos/U3INXd-6AQA',
   },
   {
     id: 3,
     title: 'Talleres en Colegios',
-    imageUrl: 'https://drive.google.com/drive/folders/1lzoUKZWYLAkL0iVDB1TplY03_ek3cpEu?usp=sharing',
+    imageUrl: 'https://unsplash.com/es/fotos/gtyskAO998w',
   },
   {
     id: 4,
     title: 'Conferencias',
-    imageUrl: 'https://drive.google.com/drive/folders/1lzoUKZWYLAkL0iVDB1TplY03_ek3cpEu?usp=sharing',
+    imageUrl: 'https://unsplash.com/es/fotos/lQBkv28OZMQ',
   },
   {
     id: 5,
     title: 'Club de Lectura',
-    imageUrl: 'https://drive.google.com/drive/folders/1lzoUKZWYLAkL0iVDB1TplY03_ek3cpEu?usp=sharing',
+    imageUrl: 'https://unsplash.com/es/fotos/iF0mSCbtBSY',
   },
 ];
 
