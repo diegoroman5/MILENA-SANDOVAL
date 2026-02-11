@@ -20,15 +20,6 @@ export const BrainGymnasticsCourse: React.FC = () => {
               ></iframe>
             </div>
 
-            {/* Milena image - hidden on small mobile to avoid overflow */}
-            <div className="absolute -bottom-8 -right-4 md:-bottom-10 md:-right-10 w-32 md:w-64 z-20 pointer-events-none hidden sm:block">
-              <img 
-                src="/images/milena-cerebro.png" 
-                alt="Milena Sandoval EMA Expert" 
-                className="w-full h-auto drop-shadow-2xl"
-              />
-            </div>
-            
             <div className="absolute -top-8 -left-8 md:-top-10 md:-left-10 w-32 h-32 md:w-40 md:h-40 bg-gold/10 blur-[80px] rounded-full" />
           </div>
 

@@ -35,7 +35,7 @@ export const ContactCTA: React.FC = () => {
             WhatsApp
           </a>
           <a 
-            href="mailto:milenasandoval@gmail.com" 
+            href="mailto:milena.sandoval@evolucioneleyendo.com" 
             className="inline-flex items-center justify-center gap-2 md:gap-3 bg-gradient-to-br from-gold to-gold-dark text-dark font-bold text-xs md:text-sm tracking-widest uppercase py-4 px-8 md:py-5 md:px-10 rounded-full hover:scale-105 transition-all shadow-[0_20px_40px_-15px_rgba(200,160,74,0.4)]"
           >
             <Mail className="w-4 h-4 md:w-5 md:h-5" />
@@ -58,8 +58,8 @@ export const ContactCTA: React.FC = () => {
             +52 1 33 3189 4040
           </a>
           <span className="text-gold/30 hidden sm:inline">|</span>
-          <a href="mailto:milenasandoval@gmail.com" className="hover:text-gold transition-colors">
-            milenasandoval@gmail.com
+          <a href="mailto:milena.sandoval@evolucioneleyendo.com" className="hover:text-gold transition-colors">
+            milena.sandoval@evolucioneleyendo.com
           </a>
         </div>
       </div>

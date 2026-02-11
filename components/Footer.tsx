@@ -19,10 +19,10 @@ export const Footer: React.FC = () => {
           </a>
           <span className="text-gold/20 hidden sm:inline">|</span>
           <a 
-            href="mailto:milenasandoval@gmail.com" 
+            href="mailto:milena.sandoval@evolucioneleyendo.com" 
             className="text-[10px] md:text-xs text-cream-muted hover:text-gold transition-colors"
           >
-            milenasandoval@gmail.com
+            milena.sandoval@evolucioneleyendo.com
           </a>
           <span className="text-gold/20 hidden sm:inline">|</span>
           <a 

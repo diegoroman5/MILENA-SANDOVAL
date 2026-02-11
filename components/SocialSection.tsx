@@ -108,14 +108,6 @@ export const SocialSection: React.FC = () => {
           ))}
         </div>
 
-        {/* Logo Milectura */}
-        <div className="mt-10 md:mt-16 flex justify-center">
-          <img 
-            src="/images/logo-milectura.png" 
-            alt="Milectura" 
-            className="h-8 md:h-16 opacity-40 hover:opacity-80 transition-opacity duration-500 invert"
-          />
-        </div>
       </div>
     </section>
   );
