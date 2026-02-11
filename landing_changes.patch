@@ -1,0 +1,130 @@
+*** Begin Patch
+*** Update File: components/SocialSection.tsx
+@@ const socials = [
+   { 
+     name: "Facebook", 
+     handle: "Milena Sandoval", 
+-    count: "100K+", 
++    // Actualiza el conteo de seguidores de Facebook a +45K
++    count: "45K+", 
+     label: "fans",
+     Icon: Facebook,
+     color: "group-hover:text-blue-500",
+     bgHover: "group-hover:bg-gradient-to-br group-hover:from-blue-600/10 group-hover:to-indigo-500/10",
+     link: "https://www.facebook.com/Milena2.Sandovall" 
+   },
+@@ const socials = [
+   { 
+     name: "YouTube", 
+     handle: "@MilecturaSandovall", 
+-    count: "500+", 
++    // Actualiza el conteo de suscriptores de YouTube a +2.6K
++    count: "2.6K+", 
+     label: "videos",
+     Icon: Youtube,
+     color: "group-hover:text-red-500",
+     bgHover: "group-hover:bg-gradient-to-br group-hover:from-red-500/10 group-hover:to-red-900/10",
+     link: "https://www.youtube.com/@MilecturaSandovall" 
+   },
+*** End Patch
+*** Update File: components/Footer.tsx
+@@
+-          <a 
+-            href="https://www.evolucioneleyendo.mx/" 
+-            target="_blank"
+-            className="text-xs text-cream-muted hover:text-gold transition-colors"
+-          >
+-            evolucioneleyendo.mx
+-          </a>
++          <a 
++            href="https://www.evolucioneleyendo.com" 
++            target="_blank"
++            className="text-xs text-cream-muted hover:text-gold transition-colors"
++          >
++            evolucioneleyendo.com
++          </a>
+*** End Patch
+*** End Patch
+*** Begin Patch
+*** Update File: App.tsx
+@@
+ import { ReadingClub } from './components/ReadingClub';
+ import { SocialSection } from './components/SocialSection';
+ import { ContactCTA } from './components/ContactCTA';
+ import { Footer } from './components/Footer';
+ import { NeuroAssistant } from './components/NeuroAssistant';
+ import { EventosEspeciales } from './components/ui/interactive-image-accordion';
++import { AuthorInterviews } from './components/AuthorInterviews';
+@@ const App: React.FC = () => {
+         <LatestMedia />
+         <EventosEspeciales />
++        {/* Nueva sección de entrevistas a autores, movida debajo de Participación en Eventos */} 
++        <AuthorInterviews />
+         <ReadingClub />
+         <SocialSection />
+         <ContactCTA />
+*** End Patch
+*** Begin Patch
+*** Update File: components/ReadingClub.tsx
+@@
+-const authors = [
+-  { id: "DWnBbw_7jRg", title: "Entrevista Autor 1" },
+-  { id: "7bAJf6YYoVY", title: "Entrevista Autor 2" },
+-  { id: "TVaTPqyI1SE", title: "Entrevista Autor 3" },
+-  { id: "pJUmLyZTHHU", title: "Entrevista Autor 4" },
+-  { id: "LlI8feMpARQ", title: "Entrevista Autor 5" },
+-  { id: "RNrH_OnJHlc", title: "Entrevista Autor 6" },
+-  { id: "1hm-vn0np8s", title: "Entrevista Autor 7" },
+-  { id: "OmwaISJscQU", title: "Entrevista Autor 8" },
+-  { id: "ZDmcndQGG_k", title: "Entrevista Autor 9" }
+-];
++// Se eliminó la lista de autores de esta sección.
++// Las entrevistas a autores se moverán a un componente independiente.
+*** End Patch
+*** Begin Patch
+*** Update File: components/ReadingClub.tsx
+@@ export const ReadingClub: React.FC = () => {
+-        {/* Video Sections */}
+-        <div className="space-y-24">
+-          <div>
+-            <div className="flex items-center justify-between mb-8">
+-              <h3 className="font-serif text-3xl font-semibold">Invitados <em className="text-gold italic not-italic">Especiales</em></h3>
+-              <div className="h-px flex-1 mx-8 bg-gold/10 hidden md:block" />
+-            </div>
+-            <div className="flex overflow-x-auto gap-6 pb-8 no-scrollbar scroll-smooth">
+-              {guests.map((v, i) => (
+-                <VideoCard key={v.id} id={v.id} title={`Invitado en el Club ${i + 1}`} />
+-              ))}
+-            </div>
+-          </div>
+-
+-          <div>
+-            <div className="flex items-center justify-between mb-8">
+-              <h3 className="font-serif text-3xl font-semibold">Entrevistas a <em className="text-gold italic not-italic">Autores</em></h3>
+-              <div className="h-px flex-1 mx-8 bg-gold/10 hidden md:block" />
+-            </div>
+-            <div className="flex overflow-x-auto gap-6 pb-8 no-scrollbar scroll-smooth">
+-              {authors.map((v, i) => (
+-                <VideoCard key={v.id} id={v.id} title={`Entrevista con Autor ${i + 1}`} />
+-              ))}
+-            </div>
+-          </div>
+-        </div>
++        {/* Video Sections */}
++        <div className="space-y-24">
++          <div>
++            <div className="flex items-center justify-between mb-8">
++              <h3 className="font-serif text-3xl font-semibold">Invitados <em className="text-gold italic not-italic">Especiales</em></h3>
++              <div className="h-px flex-1 mx-8 bg-gold/10 hidden md:block" />
++            </div>
++            <div className="flex overflow-x-auto gap-6 pb-8 no-scrollbar scroll-smooth">
++              {guests.map((v, i) => (
++                <VideoCard key={v.id} id={v.id} title={`Invitado en el Club ${i + 1}`} />
++              ))}
++            </div>
++          </div>
++
++          {/* La sección de entrevistas a autores se ha movido a un componente independiente (AuthorInterviews) */}
++        </div>
+*** End Patch
+*** End Patch
