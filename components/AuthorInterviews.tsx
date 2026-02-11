@@ -2,15 +2,15 @@ import React from 'react';
 
 // Lista de entrevistas a autores
 const authors = [
-  { id: "DWnBbw_7jRg", title: "Entrevista Autor 1" },
-  { id: "7bAJf6YYoVY", title: "Entrevista Autor 2" },
-  { id: "TVaTPqyI1SE", title: "Entrevista Autor 3" },
-  { id: "pJUmLyZTHHU", title: "Entrevista Autor 4" },
-  { id: "LlI8feMpARQ", title: "Entrevista Autor 5" },
-  { id: "RNrH_OnJHlc", title: "Entrevista Autor 6" },
-  { id: "1hm-vn0np8s", title: "Entrevista Autor 7" },
-  { id: "OmwaISJscQU", title: "Entrevista Autor 8" },
-  { id: "ZDmcndQGG_k", title: "Entrevista Autor 9" }
+  { id: "DWnBbw_7jRg", title: "Entrevista con Gaby Pérez Isalas" },
+  { id: "7bAJf6YYoVY", title: "Entrevista con Alex Toledo" },
+  { id: "TVaTPqyI1SE", title: "Entrevista con María Dueñas" },
+  { id: "pJUmLyZTHHU", title: "Entrevista con César Suárez" },
+  { id: "LlI8feMpARQ", title: "Entrevista con Enrique Rojas" },
+  { id: "RNrH_OnJHlc", title: "Entrevista con Carlos Jaramillo" },
+  { id: "1hm-vn0np8s", title: "Entrevista con Vilma Núñez" },
+  { id: "OmwaISJscQU", title: "Entrevista con Ismael Cala" },
+  { id: "ZDmcndQGG_k", title: "Entrevista con Dr. Mario Alonso Puig" }
 ];
 
 // Componente reutilizable para mostrar una tarjeta de video
