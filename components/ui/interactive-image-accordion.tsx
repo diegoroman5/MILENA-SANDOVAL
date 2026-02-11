@@ -10,7 +10,7 @@ const accordionItems = [
   {
     id: 2,
     title: 'Visitas a Empresas',
-    imageUrl: 'https://unsplash.com/es/fotos/U3INXd-6AQA',
+    imageUrl: 'https://unsplash.com/es/fotos/publico-diverso-escuchando-atentamente-en-un-evento-de-conferencia-CvG2lnWbm8s',
   },
   {
     id: 3,
