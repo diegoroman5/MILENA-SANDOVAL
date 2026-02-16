@@ -59,13 +59,13 @@ export const ReadingClub: React.FC = () => {
               
               <div className="flex flex-row gap-4 md:gap-8 items-start mb-6 md:mb-10">
                 <div className="w-20 h-28 sm:w-24 sm:h-36 md:w-32 md:h-48 rounded-lg shadow-2xl border border-gold/30 flex-shrink-0 transform -rotate-3 md:-rotate-6 hover:rotate-0 transition-transform duration-500 overflow-hidden">
-                  <img src="/images/libro-del-mes.png" alt="Lectura del Mes - Realidad 0.0" className="w-full h-full object-cover" />
+                  <img src="/images/libro-del-mes.png" alt="Lectura del Mes - Negrito" className="w-full h-full object-cover" />
                 </div>
                 <div className="pt-1">
                   <h4 className="font-serif text-lg md:text-2xl text-cream mb-1 md:mb-2 italic">Realidad 0.0</h4>
                   <p className="text-[10px] md:text-xs text-gold font-bold tracking-widest uppercase mb-2 md:mb-4">Recomendación Actual</p>
                   <p className="text-cream-muted text-xs md:text-sm leading-relaxed hidden sm:block">
-                    "La lectura es para la mente lo que el ejercicio es para el cuerpo." En nuestro club, convertimos cada página en un entrenamiento de alto rendimiento.
+                    ""La fuerza de lo que no se ve" es una invitación a mirar tus propias batallas, a recordar que la vida no se trata de evitar tormentas, sino de atravesarlas con esperanza..
                   </p>
                 </div>
               </div>
@@ -73,7 +73,7 @@ export const ReadingClub: React.FC = () => {
               <div className="h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent w-full mb-4 md:mb-8" />
               
               <p className="font-serif text-base md:text-xl italic text-cream leading-relaxed text-center">
-                "Somos el resultado de las personas con las que hablamos y convivimos a diario"
+                "Martes 24 de Febrero con Nester Contreras"
               </p>
             </div>
           </div>
