@@ -62,7 +62,7 @@ export const ReadingClub: React.FC = () => {
                   <img src="/images/libro-del-mes.png" alt="Lectura del Mes - Negrito" className="w-full h-full object-cover" />
                 </div>
                 <div className="pt-1">
-                  <h4 className="font-serif text-lg md:text-2xl text-cream mb-1 md:mb-2 italic">Realidad 0.0</h4>
+                  <h4 className="font-serif text-lg md:text-2xl text-cream mb-1 md:mb-2 italic">Negrito</h4>
                   <p className="text-[10px] md:text-xs text-gold font-bold tracking-widest uppercase mb-2 md:mb-4">Recomendación Actual</p>
                   <p className="text-cream-muted text-xs md:text-sm leading-relaxed hidden sm:block">
                     ""La fuerza de lo que no se ve" es una invitación a mirar tus propias batallas, a recordar que la vida no se trata de evitar tormentas, sino de atravesarlas con esperanza..
