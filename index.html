@@ -4,10 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Milena Sandoval — Neuro-Experta en Alta Performance</title>
-  <meta name="description" content="Milena Sandoval - CEO de Evolucione, experta en gimnasia cerebral y metaprendizaje. Transformando la forma en que el mundo lee, aprende y piensa.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="CEO de Evolucione, experta en gimnasia cerebral y metaaprendizaje. Transformando la forma en que el mundo lee, aprende y piensa.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -16,55 +14,67 @@
           colors: {
             gold: {
               DEFAULT: '#C8A04A',
-              light: '#E8D28A',
-              dark: '#9B7A2F',
+              light:   '#E8D28A',
+              dark:    '#9B7A2F',
+            },
+            brand: {
+              orange:  '#FF6B00',
+              magenta: '#E5007D',
+              purple:  '#5B2D8E',
+              blue:    '#0057FF',
+              cyan:    '#00C2FF',
             },
             dark: {
               DEFAULT: '#0A0A0A',
-              card: '#111111',
+              card:    '#111111',
               surface: '#1A1A1A',
             },
             cream: {
               DEFAULT: '#F5F0E6',
-              muted: '#BDB5A5',
+              muted:   '#BDB5A5',
             },
             accent: {
               coral: '#D4725E',
-              teal: '#5B8F8F',
+              teal:  '#5B8F8F',
             },
             background: '#0A0A0A',
-            foreground: '#F5F0E6'
+            foreground: '#F5F0E6',
           },
           fontFamily: {
             serif: ['"Playfair Display"', 'serif'],
-            sans: ['"DM Sans"', 'sans-serif'],
+            sans:  ['"DM Sans"', 'sans-serif'],
           },
           animation: {
-            'pulse-glow': 'pulseGlow 6s ease-in-out infinite',
+            'pulse-glow':  'pulseGlow 6s ease-in-out infinite',
             'float-badge': 'floatBadge 4s ease-in-out infinite',
-            'slide-up': 'slideUp 0.8s ease forwards',
+            'slide-up':    'slideUp 0.8s ease forwards',
+            'marquee':     'marquee 30s linear infinite',
           },
           keyframes: {
             pulseGlow: {
-              '0%, 100%': { transform: 'scale(1)', opacity: '0.6' },
-              '50%': { transform: 'scale(1.1)', opacity: '1' },
+              '0%, 100%': { transform: 'scale(1)',   opacity: '0.6' },
+              '50%':      { transform: 'scale(1.1)', opacity: '1'   },
             },
             floatBadge: {
-              '0%, 100%': { transform: 'translateY(0)' },
-              '50%': { transform: 'translateY(-10px)' },
+              '0%, 100%': { transform: 'translateY(0)'     },
+              '50%':      { transform: 'translateY(-10px)' },
             },
             slideUp: {
-              'from': { opacity: '0', transform: 'translateY(30px)' },
-              'to': { opacity: '1', transform: 'translateY(0)' },
-            }
-          }
-        }
-      }
+              from: { opacity: '0', transform: 'translateY(30px)' },
+              to:   { opacity: '1', transform: 'translateY(0)'    },
+            },
+            marquee: {
+              '0%':   { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(-50%)' },
+            },
+          },
+        },
+      },
     }
   </script>
   <link rel="stylesheet" href="/index.css">
 </head>
-<body class="bg-dark text-cream selection:bg-gold selection:text-dark overflow-x-hidden">
+<body class="bg-dark text-cream selection:bg-brand-orange selection:text-white overflow-x-hidden">
   <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
